@@ -12,3 +12,6 @@ of Rock Paper Scissors.
 Hope you have fun!
 
 Feel free to get in touch if you want to be involved in developing Plutus Puzzles as a learning tool alongside PPBL!
+
+
+Use the choice JSONs and Plutus Script from the output folder to build your transaction. Rebuild the script each time you change business logic!
