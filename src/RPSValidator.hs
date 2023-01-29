@@ -41,7 +41,7 @@ rpsBeats a b = case a of                      --It outputs true if a beats b.
 --It is parameterized by an arbitrary integer called game number, so each game occurs at a different script address
 {-# INLINEABLE myValidator #-}
 myValidator :: RPSParam -> RPSChoice -> RPSChoice -> ScriptContext -> Bool
-myValidator param datum redeemer context = traceIfFalse "You played the same sign as the datum in your redeemer" (rpsBeats redeemer datum)
+myValidator param datum redeemer context = traceIfFalse "You played the same sign as the datum in your redeemer" (redeemer /= datum)
 
 --As you can see, this validator doesn't implement Rock Paper Scissors correctly, try using the helper function (rpsBeats) to fix it.
 
